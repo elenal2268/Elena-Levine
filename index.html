@@ -62,8 +62,8 @@
     .profile-photo {
       display: block;
       margin: 0 auto 20px;
-      width: 250px;   /* adjust as needed */
-      height: auto;   /* keeps the rectangle ratio */
+      width: 250px;
+      height: auto;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
@@ -80,6 +80,31 @@
       color: #A65A4B;
       margin-top: 0;
     }
+
+    /* All links dark blue */
+    a {
+      color: #0B3D91; /* dark blue */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project-link {
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    .footer-link {
+      font-size: 20px;  /* slightly bigger than project links */
+      font-weight: bold;
+    }
+
+    /* Extra spacing for specific CSE 274 headings */
+    .spaced-heading {
+      margin-top: 50px;
+    }
   </style>
 </head>
 
@@ -95,14 +120,11 @@
 
   <div class="main-section">
     <h2>CSE 201 Intro to Software Engineering<br>Final Project - Haunted House Escape<br>
-    <span style="font-size: 18px;">
-    <a href="https://github.com/elenal2268/Haunted-House-Escape-Public.git" target="_blank">
-    View Project Code on GitHub
-    </span>
-    </a>
+      <a href="https://github.com/elenal2268/Haunted-House-Escape-Public.git" target="_blank" class="project-link">
+        View Project Code on GitHub
+      </a>
     </h2>
     <p class="date">February-May 2025</p>
-
     <p>
       This is an interactive, text-based game that allows the user to 
       explore a haunted house, find clues, then escape. This was a group 
@@ -110,16 +132,12 @@
       diagrams, while utilizing SOLID/OOP coding principles. 
     </p>
 
-    <br><br>
-    <h2>CSE 274 Data Abstraction and Data Structures<br>Final - AnnotationTracker<br>
-    <span style="font-size: 18px;">
-    <a href="https://github.com/elenal2268/CSE274-Public/tree/2d1cf7f998cfe5532e1d2cf262ab0f8c616292ed/Final" target="_blank">
-    View Project Code on GitHub
-    </span>
-    </a>
+    <h2 class="spaced-heading">CSE 274 Data Abstraction and Data Structures<br>Final - AnnotationTracker<br>
+      <a href="https://github.com/elenal2268/CSE274-Public/tree/2d1cf7f998cfe5532e1d2cf262ab0f8c616292ed/Final" target="_blank" class="project-link">
+        View Project Code on GitHub
+      </a>
     </h2>
     <p class="date">May 2025</p>
-
     <p>
       This was my timed Final assessment (80 minutes). The primary focus of AnnotationTracker was utilizing
       HashMap and LinkedList in order to maintain the quickest time complexity. The code allows one to input
@@ -127,16 +145,12 @@
       taking advantage of the shorter time complexity. 
     </p>
 
-    <br><br>
-    <h2>CSE 274 Data Abstraction and Data Structures<br>Midterm - AlternatingSignRearranger<br>
-    <span style="font-size: 18px;">
-    <a href="https://github.com/elenal2268/CSE274-Public/tree/d17805f23bd17003b9a2e3f79adb124aa32460e9/Midterm" target="_blank">
-    View Project Code on GitHub
-    </span>
-    </a>
+    <h2 class="spaced-heading">CSE 274 Data Abstraction and Data Structures<br>Midterm - AlternatingSignRearranger<br>
+      <a href="https://github.com/elenal2268/CSE274-Public/tree/d17805f23bd17003b9a2e3f79adb124aa32460e9/Midterm" target="_blank" class="project-link">
+        View Project Code on GitHub
+      </a>
     </h2>
     <p class="date">March 2025</p>
-
     <p>
       This was my timed Midterm assessment (80 minutes). AlternatingSignRearranger takes an array with
       both positive and negative integers and adds them to separate LinkedLists (positive/negative).
@@ -145,5 +159,11 @@
       negative values are now listed in the opposite order as how they were first entered.
     </p>
   </div>
+
+  <footer style="text-align:center; margin: 40px 0;">
+    <a href="Resume Elena Levine - Fall 2025.pdf" target="_blank" class="footer-link">
+      View Resume (Fall 2025)
+    </a>
+  </footer>
 </body>
 </html>
