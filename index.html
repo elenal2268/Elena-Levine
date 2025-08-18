@@ -5,7 +5,6 @@
   <title>Personal Projects - Elena Levine</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Monda:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Overall page styling */
     body {
       background-color: #F4E5E0; 
       color: #3B2F2F; 
@@ -15,13 +14,12 @@
       padding: 0;
     }
 
-    /* Header styles */
     h1 {
       color: #6E3B35;
       font-family: 'Monda', sans-serif;
       text-align: center;
       font-size: 2.5em;
-      margin-top: 50px;
+      margin-top: 20px;
       margin-bottom: 10px;
     }
 
@@ -35,7 +33,15 @@
       margin-bottom: 40px;
     }
 
-    /* Paragraph styling */
+    .date {
+      text-align: center;
+      font-size: 0.9em;
+      color: #6E3B35;
+      margin-top: -30px;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+
     p {
       max-width: 700px;
       margin: 0 auto;
@@ -52,93 +58,92 @@
       max-width: 800px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+
+    .profile-photo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 250px;   /* adjust as needed */
+      height: auto;   /* keeps the rectangle ratio */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .main-section {
+      max-width: 800px;     
+      margin: 30px auto;    
+      padding: 20px;        
+      text-align: left;     
+      color: #3B2F2F;      
+    }
+
+    .new-section h2 {
+      font-family: 'Monda', sans-serif;
+      color: #A65A4B;
+      margin-top: 0;
+    }
   </style>
 </head>
 
 <body>
   <div class="top-section">
+    <img src="headshot.jpg" alt="headshot photo" class="profile-photo">
     <h1>Personal Projects</h1>
     <h2>Elena Levine</h2>
     <p>Welcome!<br>
-      Here you'll find some of the larger projects I've completed throughout my college experience thus far
+      Here you'll find some of the larger projects I've completed in college so far
     </p>
   </div>
 
-<div class="main-section">
-  <h2>CSE 201 Final Project - Haunted House Escape<br>
-  <span style="font-size: 18px;">
-  <a href="https://github.com/elenal2268/Haunted-House-Escape-Public.git" target="_blank">
-  View Project Code on GitHub
-  </span>
-  </a>
-  </h2>
+  <div class="main-section">
+    <h2>CSE 201 Intro to Software Engineering<br>Final Project - Haunted House Escape<br>
+    <span style="font-size: 18px;">
+    <a href="https://github.com/elenal2268/Haunted-House-Escape-Public.git" target="_blank">
+    View Project Code on GitHub
+    </span>
+    </a>
+    </h2>
+    <p class="date">February-May 2025</p>
 
-  <p>
-    This is an interactive, text-based game that allows the user to 
-	explore a haunted house, find clues, then escape. This was a group 
-	project that challenged us to create our own class, object, and use-case
-	diagrams, while utilizing SOLID/OOP coding principles. 
-  </p>
-  
-  
-  
-  
-  
-  
-  <br><br>
-  <h2>CSE 274 Final - AnnotationTracker<br>
-  <span style="font-size: 18px;">
-  <a href="https://github.com/elenal2268/CSE274-Public/tree/2d1cf7f998cfe5532e1d2cf262ab0f8c616292ed/Final" target="_blank">
-  View Project Code on GitHub
-  </span>
-  </a>
-  </h2>
+    <p>
+      This is an interactive, text-based game that allows the user to 
+      explore a haunted house, find clues, then escape. This was a group 
+      project that challenged us to create our own class, object, and use-case
+      diagrams, while utilizing SOLID/OOP coding principles. 
+    </p>
 
-  <p>
-    This was my timed Final assessment (80 minutes). The primary focus of AnnotationTracker was utilizing
-	HashMap and LinkedList in order to maintain the quickest time complexity. The code allows one to input
-	their own IDs, comments, and perform different commands regarding those pieces of information whilst 
-	taking advantage of the shorter time complexity. 
-  </p>
-  
-  
-  
-  
-  
-  
-  <br><br>
-  <h2>CSE 274 Midterm - AlternatingSignRearranger<br>
-  <span style="font-size: 18px;">
-  <a href="https://github.com/elenal2268/CSE274-Public/tree/d17805f23bd17003b9a2e3f79adb124aa32460e9/Midterm" target="_blank">
-  View Project Code on GitHub
-  </span>
-  </a>
-  </h2>
+    <br><br>
+    <h2>CSE 274 Data Abstraction and Data Structures<br>Final - AnnotationTracker<br>
+    <span style="font-size: 18px;">
+    <a href="https://github.com/elenal2268/CSE274-Public/tree/2d1cf7f998cfe5532e1d2cf262ab0f8c616292ed/Final" target="_blank">
+    View Project Code on GitHub
+    </span>
+    </a>
+    </h2>
+    <p class="date">May 2025</p>
 
-  <p>
-    This was my timed Midterm assessment (80 minutes). AlternatingSignRearranger takes an array with
-	both positive and negative integers and adds them to separate LinkedLists (positive/negative).
-	While maintaining O(1) time complexity, the program rearranges the integer values back into 
-	a single LinkedList so that the values are alternating between positive/negative, and the 
-	negative values are now listed in the opposite order as how they were first entered.
-  </p>
-</div>
+    <p>
+      This was my timed Final assessment (80 minutes). The primary focus of AnnotationTracker was utilizing
+      HashMap and LinkedList in order to maintain the quickest time complexity. The code allows one to input
+      their own IDs, comments, and perform different commands regarding those pieces of information whilst 
+      taking advantage of the shorter time complexity. 
+    </p>
 
-<style>
-  .main-section {
-    max-width: 800px;     
-    margin: 30px auto;    
-    padding: 20px;        
-    text-align: left;     
-    color: #3B2F2F;      
-  }
+    <br><br>
+    <h2>CSE 274 Data Abstraction and Data Structures<br>Midterm - AlternatingSignRearranger<br>
+    <span style="font-size: 18px;">
+    <a href="https://github.com/elenal2268/CSE274-Public/tree/d17805f23bd17003b9a2e3f79adb124aa32460e9/Midterm" target="_blank">
+    View Project Code on GitHub
+    </span>
+    </a>
+    </h2>
+    <p class="date">March 2025</p>
 
-  .new-section h2 {
-    font-family: 'Monda', sans-serif;
-    color: #A65A4B;
-    margin-top: 0;
-  }
-</style>
-
+    <p>
+      This was my timed Midterm assessment (80 minutes). AlternatingSignRearranger takes an array with
+      both positive and negative integers and adds them to separate LinkedLists (positive/negative).
+      While maintaining O(1) time complexity, the program rearranges the integer values back into 
+      a single LinkedList so that the values are alternating between positive/negative, and the 
+      negative values are now listed in the opposite order as how they were first entered.
+    </p>
+  </div>
 </body>
 </html>
